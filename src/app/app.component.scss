@@ -1,0 +1,150 @@
+/*main container*/
+.main {
+  display: block;
+  padding: 1em;
+  background-color: white;
+  border-radius: 0.5em;
+  width: 300px;
+  border-bottom-right-radius: 4em;
+  align-items: center;
+  height: 400px;
+  margin: 3em auto;
+}
+
+@media (min-width: 1280px) {
+  .main {
+    width: 680px;
+    height: 600px;
+  }
+}
+
+/*element selector*/
+button {
+  border: none;
+}
+
+hr {
+  background-color: #dcdcdc;
+  height: 1px;
+  border: 0;
+}
+
+img {
+  width: 3em;
+  height: 3em;
+}
+
+input {
+  font-family: "Poppins";
+  font-weight: 400;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 0.5em;
+  width: 4em;
+}
+@media (min-width: 1280px) {
+  input {
+    width: 8em;
+  }
+}
+
+input:hover {
+  border-color: hsl(259, 100%, 65%);
+}
+
+input:active {
+  border-color: hsl(259, 100%, 65%);
+}
+
+span {
+  color: red;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+/* class selector */
+.container-dates {
+  display: flex;
+  gap: 18px;
+  font-size: 0.4em;
+  text-transform: uppercase;
+  margin-bottom: 3em;
+  justify-content: space-between;
+}
+
+@media (min-width: 1280px) {
+  .container-dates {
+    justify-content: flex-start;
+  }
+}
+
+.container-dates-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+}
+
+.container-icon {
+  position: relative;
+  margin: 2em 0 2em 0;
+}
+
+.container-icon-image {
+  position: absolute;
+  background-color: hsl(259, 100%, 65%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  border-radius: 100%;
+  padding: 0.3em;
+}
+
+@media (min-width: 1280px) {
+  .container-icon-image {
+    margin: auto 0 auto auto;
+  }
+}
+
+.container-icon-image:hover {
+  background-color: black;
+}
+
+.container-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-time-item {
+  font-weight: 900;
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1em;
+}
+
+@media (min-width: 1280px) {
+  .container-time-item {
+    font-size: 2.5em;
+  }
+}
+
+.container-time-item-properties {
+  color: hsl(259, 100%, 65%);
+  font-size: 1.2em;
+}
+
+.form-invalid {
+  border-color: red;
+  color: red;
+}
+
+.form-valid {
+  border-color: grey;
+  color: grey;
+}
