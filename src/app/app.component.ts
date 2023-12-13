@@ -44,14 +44,14 @@ export class AppComponent {
   isDateValid(){
     const day = this.profileForm.get('day');
     const month = this.profileForm.get('month')
-    return (
+    return this.isValidDate = (
       day && month && month.value === 2 && day.value > 28 ||
       day && month && month.value === 4 && day.value > 30 ||
       day && month && month.value === 6 && day.value > 30 ||
       day && month && month.value === 9 && day.value > 30 ||
-      day && month && month.value === 11 && day.value > 30 
+      day && month && month.value === 11 && day.value > 30
   
-      ? this.isValidDate = false  : this.isValidDate = true
+      ? false  :  true
     )
   }
 
